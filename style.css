@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Epilogue", sans-serif;
+}
+.main {
+  min-height: 100vh;
+}
+.main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 4%;
+  position: relative;
+}
+nav .hamburger {
+  position: absolute;
+  top: 22px;
+  right: 7%;
+  display: none;
+  cursor: pointer;
+}
+nav .close {
+  position: absolute;
+  top: 22px;
+  right: 7%;
+  display: none;
+  cursor: pointer;
+}
+nav .navbar-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-one .logo {
+  padding-right: 30px;
+}
+.navbar-one .links ul {
+  list-style: none;
+}
+.links ul li {
+  position: relative;
+  float: left;
+}
+.links ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: hsl(0, 0%, 41%);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+  display: block;
+}
+.links ul li a:hover {
+  font-weight: 700;
+}
+.links .hidden {
+  display: none;
+}
+.links ul li ul {
+  position: absolute;
+  left: 0;
+  width: 140px;
+  background-color: #fff;
+  display: none;
+}
+.links ul li ul li {
+  width: 100%;
+}
+.links ul li:focus-within > ul,
+.links ul li:hover > ul {
+  display: initial;
+}
+
+nav .navbar-two .btn {
+  /* display: block; */
+  margin: 0px 6px;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+}
+.navbar-two a:hover {
+  font-weight: 700;
+}
+.navbar-two .change {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  nav .hamburger {
+    display: initial;
+  }
+  .main nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 4%;
+    position: relative;
+  }
+  .navbar-two {
+    display: none;
+  }
+  .navbar-one .logo {
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+  nav .navbar-one {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .navbar-one .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none;
+    min-height: 400px;
+    border-bottom: 1px solid silver;
+    background-color: #fff;
+  }
+
+  .navbar-one ul li {
+    width: 100%;
+  }
+  .links ul li a {
+    padding: 15px 0px;
+    font-size: 16px;
+  }
+  .navbar-one ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  .links .hidden {
+    display: block;
+  }
+  .links.active {
+    display: initial;
+  }
+}
+
+/* flex */
+.main .flex {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 100px;
+}
+.flex > * {
+  flex-basis: 100%;
+}
+.flex .text {
+  padding: 10px 30px;
+}
+.text h1 {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: "Epilogue", sans-serif;
+  padding-bottom: 10px;
+}
+.text p {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+  padding: 15px 0px;
+  line-height: 22px;
+}
+.text button {
+  width: 130px;
+  height: 45px;
+  margin: 25px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid hsl(0, 0%, 8%);
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+.text button:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+}
+.text .social {
+  display: inline-block;
+  /* margin: 10px; */
+  margin-top: 60px;
+}
+.social img {
+  width: 80px;
+  height: auto;
+  margin: 0px 8px;
+}
+.flex picture {
+  width: 100%;
+  height: 100%;
+}
+picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .main .flex {
+    padding: 60px 60px;
+  }
+  .text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Epilogue", sans-serif;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .main .flex {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    text-align: center;
+  }
+  .text {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .text h1 {
+    font-size: 40px;
+  }
+  .text .social {
+    display: inline-block;
+    /* margin: 10px; */
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .social img {
+    width: 60px;
+    height: auto;
+    margin: 0px 0px;
+  }
+  .flex picture {
+    width: 100%;
+    height: 100%;
+  }
+}

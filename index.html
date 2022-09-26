@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro-section-with-dropdown-navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <main class="main">
+      <nav>
+        <div class="navbar-one">
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="links">
+            <ul>
+              <li>
+                <a href="#">Features ></a>
+                <ul>
+                  <li><a href="#">📝 Todo list</a></li>
+                  <li><a href="#">📅 Calenders</a></li>
+                  <li><a href="#">⏲️ Remainders</a></li>
+                  <li><a href="#">🖋️ Planning</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Company ></a>
+                <ul>
+                  <li><a href="#">📜 History</a></li>
+                  <li><a href="#">🧑🏻‍🤝‍🧑🏻 Our Team</a></li>
+                  <li><a href="#">📚 Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#" class="hidden">Login</a></li>
+              <li><a href="#" class="hidden">Register</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hamburger">
+          <img src="img/icon-menu.png" alt="" />
+        </div>
+        <div class="close">
+          <img src="img/icon-close-menu.png" alt="" />
+        </div>
+        <div class="navbar-two">
+          <a href="#" class="btn">Login</a>
+          <a href="#" class="btn change">Register</a>
+        </div>
+      </nav>
+      <div class="flex">
+        <div class="text">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync,no matter your location, Streamline
+            processes,create team rituals,and watch productivity soar.
+          </p>
+          <button class="btn-flex">Learn More</button>
+          <br />
+          <div class="social">
+            <img src="img/client-databiz.png" alt="" />
+            <img src="img/client-audiophile.png" alt="" />
+            <img src="img/client-meet.png" alt="" />
+            <img src="img/client-maker.png" alt="" />
+          </div>
+        </div>
+        <picture>
+          <source
+            media="(max-width:450px )"
+            srcset="img/image-hero-mobile.png"
+          />
+          <img src="img/image-hero-desktop.png" alt="" />
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>
